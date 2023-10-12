@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EPP-wC-wK7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oe2-Ae-u8W">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -190,10 +190,10 @@
             </objects>
             <point key="canvasLocation" x="2764" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow View Controller-->
         <scene sceneID="kDS-sq-wna">
             <objects>
-                <viewController id="a9K-pP-oRD" sceneMemberID="viewController">
+                <viewController id="a9K-pP-oRD" customClass="YellowViewController" customModule="UIKitBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hze-f5-XFf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,7 +204,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Button"/>
                                 <connections>
-                                    <segue destination="fnk-6r-Ba5" kind="show" id="L99-qE-9KO"/>
+                                    <segue destination="fnk-6r-Ba5" kind="show" identifier="goNext" id="L99-qE-9KO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIy-zu-i7Q">
@@ -216,11 +216,20 @@
                                     <segue destination="MPs-a1-ueR" kind="presentation" id="3kg-fY-Qoc"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSd-Aq-LWf">
+                                <rect key="frame" x="87" y="331" width="218" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F2X-zi-2rO"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="0YF-iu-zlg"/>
+                    <connections>
+                        <outlet property="insertNameTextField" destination="RSd-Aq-LWf" id="pZK-9b-Ktg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8su-gB-bzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -268,10 +277,10 @@
             </objects>
             <point key="canvasLocation" x="6401" y="696"/>
         </scene>
-        <!--View Controller-->
+        <!--Orange View Controller-->
         <scene sceneID="AU5-lm-kx3">
             <objects>
-                <viewController id="fnk-6r-Ba5" sceneMemberID="viewController">
+                <viewController id="fnk-6r-Ba5" customClass="OrangeViewController" customModule="UIKitBasic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PBg-c9-hF8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,11 +294,25 @@
                                     <segue destination="B6g-8a-tvu" kind="show" id="06G-Zy-sbe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjF-ry-n5a">
+                                <rect key="frame" x="20" y="303" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3tj-AB-CjV"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="TjF-ry-n5a" firstAttribute="top" secondItem="3tj-AB-CjV" secondAttribute="top" constant="200" id="FcD-eb-TBc"/>
+                            <constraint firstItem="TjF-ry-n5a" firstAttribute="leading" secondItem="3tj-AB-CjV" secondAttribute="leading" constant="20" id="Vqx-dM-lHG"/>
+                            <constraint firstItem="3tj-AB-CjV" firstAttribute="trailing" secondItem="TjF-ry-n5a" secondAttribute="trailing" constant="20" id="seH-mA-ane"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hOM-vE-zol"/>
+                    <connections>
+                        <outlet property="name" destination="TjF-ry-n5a" id="FHS-NM-B91"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5V-z4-cje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -378,6 +401,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EPP-wC-wK7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="olP-I5-c76">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
