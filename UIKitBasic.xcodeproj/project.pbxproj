@@ -14,6 +14,7 @@
 		D822298C2AD6952400C9EDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D822298B2AD6952400C9EDF7 /* Assets.xcassets */; };
 		D822298F2AD6952400C9EDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D822298D2AD6952400C9EDF7 /* LaunchScreen.storyboard */; };
 		D82229972AD6EAD700C9EDF7 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82229962AD6EAD700C9EDF7 /* MyViewController.swift */; };
+		D85717F72AD7A2C300EF4ACF /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85717F62AD7A2C300EF4ACF /* MyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D822298E2AD6952400C9EDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D82229902AD6952400C9EDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D82229962AD6EAD700C9EDF7 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		D85717F62AD7A2C300EF4ACF /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				D822298D2AD6952400C9EDF7 /* LaunchScreen.storyboard */,
 				D82229902AD6952400C9EDF7 /* Info.plist */,
 				D82229962AD6EAD700C9EDF7 /* MyViewController.swift */,
+				D85717F62AD7A2C300EF4ACF /* MyTableViewController.swift */,
 			);
 			path = UIKitBasic;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				D82229872AD6952300C9EDF7 /* ViewController.swift in Sources */,
 				D82229832AD6952300C9EDF7 /* AppDelegate.swift in Sources */,
 				D82229972AD6EAD700C9EDF7 /* MyViewController.swift in Sources */,
+				D85717F72AD7A2C300EF4ACF /* MyTableViewController.swift in Sources */,
 				D82229852AD6952300C9EDF7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
