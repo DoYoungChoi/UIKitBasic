@@ -18,6 +18,8 @@
 		D85717FD2AD7BB6A00EF4ACF /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85717FC2AD7BB6A00EF4ACF /* TodoViewController.swift */; };
 		D85717FF2AD7DB9D00EF4ACF /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85717FE2AD7DB9D00EF4ACF /* YellowViewController.swift */; };
 		D85718032AD7DBF300EF4ACF /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85718022AD7DBF300EF4ACF /* OrangeViewController.swift */; };
+		D85718062AD7E51A00EF4ACF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85718052AD7E51A00EF4ACF /* ProfileViewController.swift */; };
+		D85718082AD7E75400EF4ACF /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85718072AD7E75400EF4ACF /* ProfileDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D85717FC2AD7BB6A00EF4ACF /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		D85717FE2AD7DB9D00EF4ACF /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		D85718022AD7DBF300EF4ACF /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
+		D85718052AD7E51A00EF4ACF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D85718072AD7E75400EF4ACF /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,18 @@
 				D85717FC2AD7BB6A00EF4ACF /* TodoViewController.swift */,
 				D85717FE2AD7DB9D00EF4ACF /* YellowViewController.swift */,
 				D85718022AD7DBF300EF4ACF /* OrangeViewController.swift */,
+				D85718042AD7E4F900EF4ACF /* SimpleAppViewControllers */,
 			);
 			path = UIKitBasic;
+			sourceTree = "<group>";
+		};
+		D85718042AD7E4F900EF4ACF /* SimpleAppViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D85718052AD7E51A00EF4ACF /* ProfileViewController.swift */,
+				D85718072AD7E75400EF4ACF /* ProfileDetailViewController.swift */,
+			);
+			path = SimpleAppViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +172,9 @@
 				D82229832AD6952300C9EDF7 /* AppDelegate.swift in Sources */,
 				D82229972AD6EAD700C9EDF7 /* MyViewController.swift in Sources */,
 				D85717FF2AD7DB9D00EF4ACF /* YellowViewController.swift in Sources */,
+				D85718082AD7E75400EF4ACF /* ProfileDetailViewController.swift in Sources */,
 				D85717F72AD7A2C300EF4ACF /* MyTableViewController.swift in Sources */,
+				D85718062AD7E51A00EF4ACF /* ProfileViewController.swift in Sources */,
 				D85717FD2AD7BB6A00EF4ACF /* TodoViewController.swift in Sources */,
 				D82229852AD6952300C9EDF7 /* SceneDelegate.swift in Sources */,
 			);
